@@ -1,6 +1,6 @@
 from django.shortcuts import render
 
-from.models import Tweets
+from .models import Tweets
 
 def stream(request):
 	all_tweets = Tweets.objects.all().order_by('-date')
