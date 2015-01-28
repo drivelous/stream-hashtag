@@ -2,6 +2,11 @@
 
 {% block content %}
 
-<h1>Fill header</h1>
+{% for tweet in all_tweets %}
+	<p>{{ tweet.text }}</p>
+	<p>by {{ tweet.username }}</p>
+	<p>{{ tweet.date }}</p>
+	</br>
+{% endfor %}
 
 {% endblock %}
