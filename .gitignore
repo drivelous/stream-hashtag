@@ -1,4 +1,5 @@
 *.pyc
+practice
 settings.py
 migrations
 authorization.py
